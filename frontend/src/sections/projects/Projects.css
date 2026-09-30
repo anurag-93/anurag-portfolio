@@ -1,0 +1,158 @@
+.projects {
+  padding: 2rem 0 4rem;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.projects > .container {
+  width: min(720px, calc(100vw - 40px));
+  margin: 0 auto;
+}
+
+.projects__header {
+  margin-bottom: 2rem;
+}
+
+.projects__header h2 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  letter-spacing: -0.04em;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-preview {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 2rem;
+
+  padding: 1.4rem 0;
+
+  border-top: 1px solid var(--color-border);
+}
+
+.project-preview:last-child {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-preview__content {
+  min-width: 0;
+}
+
+.project-preview h3 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-size: 1.05rem;
+  font-weight: 650;
+
+  letter-spacing: -0.02em;
+}
+
+.project-preview p {
+  margin: 0.35rem 0 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.project-preview__tech {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.45rem;
+
+  margin-top: 0.7rem;
+}
+
+.project-preview__tech span {
+  color: var(--color-text-soft);
+
+  font-size: 0.7rem;
+}
+
+.project-preview__tech span:not(:last-child)::after {
+  content: " · ";
+
+  margin-left: 0.45rem;
+}
+
+.project-preview__links {
+  display: flex;
+  gap: 0.8rem;
+
+  flex-shrink: 0;
+}
+
+.project-preview__links a {
+  color: var(--color-text-muted);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color var(--transition-fast);
+}
+
+.project-preview__links a:hover {
+  color: var(--color-accent);
+}
+
+.projects__footer {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 1.25rem;
+}
+
+.projects__footer a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.4rem;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: color var(--transition-fast);
+}
+
+.projects__footer a:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 640px) {
+  .projects {
+    padding: 4rem 0 5rem;
+  }
+
+  .projects > .container {
+    width: calc(100vw - 32px);
+  }
+
+  .project-preview {
+    display: block;
+  }
+
+  .project-preview__links {
+    margin-top: 0.75rem;
+  }
+}

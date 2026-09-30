@@ -1,0 +1,109 @@
+.quote {
+  width: min(100% - 80px, 800px);
+
+  margin: 0 auto 0;
+}
+
+.quote__box {
+  position: relative;
+
+  min-height: 80px;
+
+  padding: 24px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ border: 1px solid rgba(0, 0, 0, 0.10);
+
+  border-radius: 12px;
+
+  overflow: hidden;
+}
+
+/* =========================
+   Quote content
+========================= */
+
+.quote__content {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+.quote__content p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+
+  font-style: italic;
+}
+
+.quote__content span {
+  display: block;
+
+  margin-top: 5px;
+
+  font-size: 14px;
+
+  opacity: 0.6;
+}
+
+/* =========================
+   Quote marks
+========================= */
+
+.quote__mark {
+  position: absolute;
+
+  font-family: Georgia, serif;
+
+  font-size: 100px;
+
+  line-height: 1;
+
+  opacity: 0.05;
+
+  pointer-events: none;
+}
+
+.quote__mark--left {
+  left: 24px;
+  top: 2px;
+}
+
+.quote__mark--right {
+  right: 24px;
+  top: 30px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+  .quote {
+    width: min(100% - 32px, 800px);
+
+    margin-top: 40px;
+  }
+
+  .quote__box {
+    min-height: 100px;
+
+    padding: 24px 20px;
+  }
+
+  .quote__content p {
+    font-size: 16px;
+  }
+
+  .quote__mark {
+    font-size: 80px;
+  }
+}

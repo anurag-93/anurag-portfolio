@@ -1,0 +1,804 @@
+/* =========================================================
+   RESUME PAGE
+========================================================= */
+
+.resume {
+  padding: 100px 0 80px;
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   SHARED OUTER CARD
+========================================================= */
+
+.resume__outer-card,
+.resume__card {
+  box-sizing: border-box;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+
+  background: var(--surface-secondary);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.resume__outer-card:hover,
+.resume__card:hover {
+  transform: translateY(-2px);
+
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   INTRO CARD
+========================================================= */
+
+.resume__intro {
+  min-height: 230px;
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) 250px;
+
+  align-items: end;
+
+  gap: 60px;
+
+  padding: 55px;
+
+  margin-bottom: 12px;
+}
+
+.resume__label {
+  margin: 0 0 28px;
+
+  font-size: 0.72rem;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+
+  color: var(--text-muted);
+}
+
+.resume__intro h1 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-size: clamp(4rem, 9vw, 8rem);
+
+  line-height: 0.82;
+
+  letter-spacing: -0.075em;
+
+  font-weight: 500;
+}
+
+.resume__role {
+  margin: 28px 0 0;
+
+  font-size: 1.05rem;
+
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.resume__intro-side {
+  align-self: end;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding-bottom: 4px;
+
+  font-size: 0.8rem;
+
+  line-height: 1.5;
+
+  color: var(--text-secondary);
+}
+
+.resume__intro-side p {
+  margin: 0 0 10px;
+
+  color: var(--text-primary);
+}
+
+.resume__intro-side a {
+  width: fit-content;
+
+  color: inherit;
+
+  text-decoration: none;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.resume__intro-side a:hover {
+  opacity: 0.55;
+
+  transform: translateX(4px);
+}
+
+.resume__socials {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 10px;
+}
+
+
+/* =========================================================
+   DOWNLOAD BAR
+========================================================= */
+
+.resume__toolbar {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 15px 18px;
+
+  margin-bottom: 12px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 12px;
+
+  background: var(--surface-secondary);
+
+  font-size: 0.75rem;
+
+  color: var(--text-muted);
+}
+
+.resume__toolbar a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--text-primary);
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.resume__toolbar a:hover {
+  opacity: 0.55;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.resume__about-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.8fr)
+    minmax(220px, 0.7fr);
+
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+.resume__card {
+  padding: 30px;
+}
+
+.resume__card-label {
+  margin-bottom: 30px;
+
+  font-size: 0.68rem;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   ABOUT MAIN
+========================================================= */
+
+.resume__card--about {
+  min-height: 250px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+/*
+   Only the About paragraph is smaller.
+   The rest of the resume keeps its larger typography.
+*/
+
+.resume__card--about p {
+  max-width: 720px;
+
+  margin: 0;
+
+  font-size: clamp(1rem, 1.5vw, 1.3rem);
+
+  line-height: 1.55;
+
+  letter-spacing: -0.015em;
+
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   CURRENTLY
+========================================================= */
+
+.resume__card--status {
+  min-height: 250px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.resume__dot {
+  width: 9px;
+
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: var(--text-primary);
+
+  box-shadow:
+    0 0 0 5px rgba(0, 0, 0, 0.08);
+}
+
+.resume__card--status div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.resume__card--status span {
+  font-size: 0.7rem;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  color: var(--text-muted);
+}
+
+.resume__card--status strong {
+  font-size: 1.2rem;
+
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* =========================================================
+   MAJOR SECTION CARDS
+========================================================= */
+
+.resume__section {
+  padding: 34px;
+
+  margin-bottom: 12px;
+}
+
+.resume__section-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding-bottom: 23px;
+
+  margin-bottom: 25px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.resume__section-header span {
+  font-size: 0.65rem;
+
+  color: var(--text-muted);
+}
+
+.resume__section-header h2 {
+  margin: 0;
+
+  font-size: 0.8rem;
+
+  font-weight: 500;
+
+  letter-spacing: 0.14em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.resume__skills-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.resume__skill-card {
+  min-height: 175px;
+
+  padding: 24px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 14px;
+
+  background: var(--background);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.resume__skill-card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.resume__skill-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+
+  font-size: 0.65rem;
+
+  color: var(--text-muted);
+}
+
+.resume__skill-card h3 {
+  margin: 0 0 18px;
+
+  font-size: 1.05rem;
+
+  font-weight: 500;
+
+  letter-spacing: -0.015em;
+}
+
+.resume__chips {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+}
+
+.resume__chips span {
+  padding: 7px 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 7px;
+
+  font-size: 0.75rem;
+
+  color: var(--text-secondary);
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resume__chips span:hover {
+  color: var(--text-primary);
+
+  background: var(--surface-secondary);
+
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.resume__project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.resume__project-card {
+  min-height: 390px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 28px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 14px;
+
+  background: var(--background);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.resume__project-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.resume__project-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 65px;
+
+  font-size: 0.65rem;
+
+  color: var(--text-muted);
+}
+
+.resume__project-top span:last-child {
+  max-width: 55%;
+
+  text-align: right;
+
+  line-height: 1.5;
+}
+
+.resume__project-card h3 {
+  margin: 0;
+
+  font-size: clamp(1.5rem, 3vw, 2.3rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.045em;
+
+  font-weight: 500;
+}
+
+.resume__project-description {
+  max-width: 520px;
+
+  margin: 20px 0 18px;
+
+  font-size: 0.86rem;
+
+  line-height: 1.65;
+
+  color: var(--text-secondary);
+}
+
+.resume__project-card ul {
+  margin: 0;
+
+  padding-left: 18px;
+
+  color: var(--text-secondary);
+}
+
+.resume__project-card li {
+  margin-bottom: 8px;
+
+  font-size: 0.78rem;
+
+  line-height: 1.55;
+}
+
+.resume__project-links {
+  display: flex;
+
+  gap: 18px;
+
+  margin-top: auto;
+
+  padding-top: 30px;
+}
+
+.resume__project-links a {
+  font-size: 0.76rem;
+
+  color: var(--text-primary);
+
+  text-decoration: none;
+}
+
+.resume__project-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.resume__education {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.resume__education-item {
+  display: grid;
+
+  grid-template-columns: 160px 1fr;
+
+  gap: 30px;
+
+  padding: 20px 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.resume__education-item:first-child {
+  padding-top: 0;
+}
+
+.resume__education-item:last-child {
+  padding-bottom: 0;
+
+  border-bottom: none;
+}
+
+.resume__education-date {
+  font-size: 0.72rem;
+
+  line-height: 1.5;
+
+  color: var(--text-muted);
+}
+
+.resume__education-main h3 {
+  margin: 0 0 8px;
+
+  font-size: 1.15rem;
+
+  font-weight: 500;
+
+  letter-spacing: -0.02em;
+}
+
+.resume__education-main p {
+  margin: 0 0 5px;
+
+  font-size: 0.84rem;
+
+  color: var(--text-secondary);
+}
+
+.resume__education-main span {
+  font-size: 0.7rem;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   LOOKING FOR
+========================================================= */
+
+.resume__roles {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.resume__role-item {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 15px 16px;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+
+  border-radius: 10px;
+
+  font-size: 0.82rem;
+
+  color: var(--text-secondary);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resume__role-item:hover {
+  transform: translateY(-2px);
+
+  background: var(--surface-secondary);
+
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.resume__role-item b {
+  font-size: 0.7rem;
+
+  font-weight: 400;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.resume__footer {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 28px 4px;
+
+  font-size: 0.68rem;
+
+  color: var(--text-muted);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .resume {
+    padding: 80px 0 60px;
+  }
+
+  .resume__intro {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 38px 26px;
+  }
+
+  .resume__intro h1 {
+    font-size: clamp(
+      3.8rem,
+      18vw,
+      7rem
+    );
+  }
+
+  .resume__intro-side {
+    align-self: start;
+  }
+
+  .resume__about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume__skills-grid,
+  .resume__project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume__section {
+    padding: 28px 22px;
+  }
+
+  .resume__project-card {
+    min-height: 350px;
+  }
+
+  .resume__roles {
+    grid-template-columns: 1fr;
+  }
+
+  .resume__education-item {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .resume__footer {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .resume__toolbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+  }
+
+  .resume__card {
+    padding: 24px;
+  }
+
+  .resume__project-card {
+    min-height: auto;
+  }
+}
