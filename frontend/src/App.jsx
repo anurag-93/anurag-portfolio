@@ -7,7 +7,7 @@ import Footer from "./components/layout/Footer.jsx";
 
 import Hero from "./sections/hero/Hero.jsx";
 import Projects from "./sections/projects/Projects.jsx";
-import WorkPage from "./pages/Work/WorkPage.jsx";
+import WorkPage from "./pages/work/WorkPage.jsx";
 import ResumePage from "./pages/resume/ResumePage.jsx";
 import BlogPage from "./pages/blog/BlogPage.jsx";
 
