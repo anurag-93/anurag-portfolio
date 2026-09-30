@@ -105,7 +105,7 @@
   }
 
   .navbar__brand {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
   }
 
   .navbar__links {
@@ -116,12 +116,12 @@
   }
 
   .navbar__links a {
-    font-size: 0.72rem;
+    font-size: 1.0rem;
   }
 
   .navbar__theme {
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.4rem;
   }
 }
