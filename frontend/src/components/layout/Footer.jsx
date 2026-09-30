@@ -31,22 +31,22 @@ const socialLinks = [
   {
     label: "X",
     icon: <FaXTwitter />,
-    href: "https://x.com/yourusername",
+    href: "https://x.com/anurag93__",
   },
   {
     label: "LinkedIn",
     icon: <FaLinkedinIn />,
-    href: "https://linkedin.com/in/yourusername",
+    href: "https://www.linkedin.com/in/anurag-rajpoot-760955304/",
   },
   {
     label: "GitHub",
     icon: <FaGithub />,
-    href: "https://github.com/yourusername",
+    href: "https://github.com/anurag-93",
   },
   {
     label: "Email",
     icon: <FaEnvelope />,
-    href: "mailto:your@email.com",
+    href: "mailto:codewithanurag93@gmail.com",
   },
 ];
 
