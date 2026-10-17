@@ -1,11 +1,11 @@
 export const projects = [
   {
     id: 1,
-    title: "Project One",
-    description: "Short description of the project.",
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    github: "#",
-    live: "#",
+    title: "MY - Portfolio",
+    description: "I created a personal portfolio website to showcase my projects and skills using React.",
+    technologies: ["React", "Tailwind CSS", "JavaScript"],
+    github: "https://github.com/anurag-93/anurag-portfolio",
+    live: "https://anurag-portfolio-sigma-rouge.vercel.app",
   },
   {
     id: 2,
