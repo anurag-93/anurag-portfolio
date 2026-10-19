@@ -9,10 +9,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Project Two",
-    description: "Short description of the project.",
-    technologies: ["Next.js", "Express", "MongoDB"],
-    github: "#",
+    title: "waygood-mern-backend-assignment",
+    description: " A MERN stack study-abroad backend built with Node.js, Express.js, MongoDB, and Mongoose. Implements JWT authentication, password hashing with bcrypt, university and program discovery APIs, MongoDB aggregation-based recommendations, and application status tracking with validation and history. Includes API testing with Jest and Supertest, caching, database indexing, and error handling.",
+    technologies: ["Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", "bcrypt", "Jest", "Supertest"],
+    github: "https://github.com/anurag-93/waygood-mern-backend-assignment",
     live: "#",
   },
   {
