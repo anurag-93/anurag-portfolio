@@ -1,4 +1,6 @@
 :root {
+  /* ── Light theme (default) ── */
+
   --color-bg: #f4f3ef;
   --color-surface: #eae9e4;
   --color-surface-hover: #e2e1dc;
@@ -13,6 +15,19 @@
   --color-accent: #962625;
   --color-accent-dark: #625846;
 
+  /* ── Alias tokens (used by Resume, Blog, Footer, Quote) ── */
+  --background:        var(--color-bg);
+  --surface-secondary: var(--color-surface);
+  --text-primary:      var(--color-text);
+  --text-secondary:    var(--color-text-muted);
+  --text-muted:        var(--color-text-soft);
+  --border:            var(--color-border);
+  --border-color:      var(--color-border);
+  --card-border:       rgba(0, 0, 0, 0.12);
+  --card-border-hover: rgba(0, 0, 0, 0.22);
+  --dot-shadow:        rgba(0, 0, 0, 0.08);
+
+  /* ── Layout & spacing ── */
   --container-width: 1180px;
 
   --radius-sm: 8px;
@@ -28,4 +43,33 @@
   --space-3xl: 7rem;
 
   --transition-fast: 160ms ease;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] {
+  --color-bg: #161615;
+  --color-surface: #1e1e1c;
+  --color-surface-hover: #252523;
+
+  --color-text: #e8e6e1;
+  --color-text-muted: #8a8a84;
+  --color-text-soft: #5e5e59;
+
+  --color-border: #2c2c29;
+  --color-border-strong: #3a3a36;
+
+  --color-accent: #c0403e;
+  --color-accent-dark: #8a7a62;
+
+  /* Alias tokens */
+  --background:        var(--color-bg);
+  --surface-secondary: var(--color-surface);
+  --text-primary:      var(--color-text);
+  --text-secondary:    var(--color-text-muted);
+  --text-muted:        var(--color-text-soft);
+  --border:            var(--color-border);
+  --border-color:      var(--color-border);
+  --card-border:       rgba(255, 255, 255, 0.07);
+  --card-border-hover: rgba(255, 255, 255, 0.13);
+  --dot-shadow:        rgba(255, 255, 255, 0.08);
 }

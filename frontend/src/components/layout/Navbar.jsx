@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { BsSun, BsMoon } from "react-icons/bs";
 import Container from "../comman/Container.jsx";
 import "./Navbar.css";
 
@@ -23,9 +24,9 @@ function Navbar({ theme, toggleTheme }) {
             type="button"
             className="navbar__theme"
             onClick={toggleTheme}
-            aria-label="Toggle dark mode"
+            aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
           >
-            {theme === "dark" ? "☀" : "☾"}
+            {theme === "dark" ? <BsSun /> : <BsMoon />}
           </button>
 
         </nav>

@@ -16,7 +16,7 @@
 .resume__card {
   box-sizing: border-box;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
   border-radius: 18px;
 
   background: var(--surface-secondary);
@@ -30,7 +30,7 @@
 .resume__card:hover {
   transform: translateY(-2px);
 
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border-hover);
 }
 
 
@@ -161,7 +161,7 @@
 
   margin-bottom: 12px;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
 
   border-radius: 12px;
 
@@ -282,7 +282,7 @@
   background: var(--text-primary);
 
   box-shadow:
-    0 0 0 5px rgba(0, 0, 0, 0.08);
+    0 0 0 5px var(--dot-shadow);
 }
 
 .resume__card--status div {
@@ -333,7 +333,7 @@
 
   margin-bottom: 25px;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--card-border);
 }
 
 .resume__section-header span {
@@ -373,7 +373,7 @@
 
   padding: 24px;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
 
   border-radius: 14px;
 
@@ -387,7 +387,7 @@
 .resume__skill-card:hover {
   transform: translateY(-3px);
 
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border-hover);
 }
 
 .resume__skill-top {
@@ -425,7 +425,7 @@
 .resume__chips span {
   padding: 7px 10px;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
 
   border-radius: 7px;
 
@@ -444,7 +444,7 @@
 
   background: var(--surface-secondary);
 
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border-hover);
 }
 
 
@@ -470,7 +470,7 @@
 
   padding: 28px;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
 
   border-radius: 14px;
 
@@ -484,7 +484,7 @@
 .resume__project-card:hover {
   transform: translateY(-4px);
 
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border-hover);
 }
 
 .resume__project-top {
@@ -591,7 +591,7 @@
 
   padding: 20px 0;
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid var(--card-border);
 }
 
 .resume__education-item:first-child {
@@ -659,7 +659,7 @@
 
   padding: 15px 16px;
 
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--card-border);
 
   border-radius: 10px;
 
@@ -678,7 +678,7 @@
 
   background: var(--surface-secondary);
 
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--card-border-hover);
 }
 
 .resume__role-item b {

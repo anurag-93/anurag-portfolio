@@ -16,6 +16,9 @@ body {
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
 }
 
 h1,

@@ -1,3 +1,4 @@
+import { useState, useEffect, useCallback } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -12,6 +13,17 @@ import ResumePage from "./pages/resume/ResumePage.jsx";
 import BlogPage from "./pages/blog/BlogPage.jsx";
 
 import "./App.css";
+
+function getInitialTheme() {
+  try {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") return saved;
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) return "dark";
+  } catch {
+    // ignore – localStorage may be unavailable (private browsing)
+  }
+  return "light";
+}
 
 
 function Home() {
@@ -60,7 +72,7 @@ function AnimatedRoutes() {
 }
 
 
-function AppContent() {
+function AppContent({ theme, toggleTheme }) {
   const location = useLocation();
 
   const page =
@@ -71,7 +83,7 @@ function AppContent() {
   return (
     <div className="site-shell">
 
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
 
       <AnimatedRoutes />
 
@@ -85,9 +97,28 @@ function AppContent() {
 
 
 function App() {
+  const [theme, setTheme] = useState(getInitialTheme);
+
+  const toggleTheme = useCallback(() => {
+    setTheme((prev) => {
+      const next = prev === "dark" ? "light" : "dark";
+      try {
+        localStorage.setItem("theme", next);
+        document.documentElement.setAttribute("data-theme", next);
+      } catch {
+        // ignore – localStorage may be unavailable (private browsing)
+      }
+      return next;
+    });
+  }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
   return (
     <BrowserRouter>
-      <AppContent />
+      <AppContent theme={theme} toggleTheme={toggleTheme} />
     </BrowserRouter>
   );
 }
